@@ -1,0 +1,26 @@
+{
+  "name": "Magic-Mirror-Module-NeviWeb",
+  "version": "1.0.0",
+  "description": "Get interior temperature from my sinope devices",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienstroheker/MMM-NeviWebTemp"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "temperature",
+    "neviweb",
+    "sinope"
+  ],
+  "author": "Julien Stroheker",
+  "contributors": "https://github.com/julienstroheker/MMM-NeviWebTemp/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julienstroheker/MMM-NeviWebTemp/issues"
+  },
+  "homepage": "https://github.com/julienstroheker/MMM-NeviWebTemp#readme",
+  "dependencies": {
+    "request": "latest"
+  }
+}
