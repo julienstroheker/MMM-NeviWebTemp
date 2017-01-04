@@ -45,14 +45,15 @@ module.exports = NodeHelper.create({
                     var thermoinfos = { "name": "", id: null, "active" : null, "setpoint" : null, "temperature" : null };
                     var path = uri+'api/device/' + device.id + '/data?force=1';
                     thermoinfos.name = device.name;
-                    thermoinfos.active = device.active;
                     thermoinfos.id = device.id;
                     
                     request({url: path, method: 'GET', headers: dataHeaders}, function(error, response, body) {
                       if (!error && response.statusCode == 200) {
-                        
+
                         thermoinfos.temperature = JSON.parse(body).temperature;
                         thermoinfos.setpoint = JSON.parse(body).setpoint;
+                        if(JSON.parse(body).heatLevel >= 1){thermoinfos.active = 1;}
+                        else{thermoinfos.active=0;}
                         result.thermostats.push(thermoinfos);
                       }
                       else
