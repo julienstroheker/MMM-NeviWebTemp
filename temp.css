@@ -1,3 +1,11 @@
 .titleNevi {
-    text-align: left;
+  text-align: left;
+}
+
+.ligthSymbol {
+  padding-right: 5px;
+}
+
+.tempValue {
+  padding-left: 5px;
 }
